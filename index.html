@@ -4,127 +4,302 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CÔNG TY TNHH VẬN TẢI THANH THANH TIỀN</title>
+
+  <meta name="description" content="Công ty TNHH Vận Tải Thanh Thanh Tiền – chuyên vận chuyển hàng hóa an toàn, nhanh chóng, uy tín, chi phí hợp lý." />
+
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      line-height: 1.6;
+      line-height: 1.7;
       color: #333;
+      background: #f4f6f8;
     }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
     header {
       background: #0a4cff;
       color: #fff;
-      padding: 20px 40px;
+      padding: 20px 0;
     }
+
+    header .container {
+      padding: 0 20px;
+    }
+
     header h1 {
       margin: 0;
+      font-size: 24px;
     }
+
+    nav {
+      margin-top: 10px;
+    }
+
     nav a {
       color: #fff;
       margin-right: 20px;
       text-decoration: none;
       font-weight: bold;
     }
+
     .hero {
-      background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover no-repeat;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover no-repeat;
       color: #fff;
-      padding: 100px 40px;
+      padding: 140px 20px;
       text-align: center;
     }
+
     .hero h2 {
-      font-size: 40px;
-      margin-bottom: 20px;
+      font-size: 42px;
+      max-width: 900px;
+      margin: auto;
     }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 15px auto 30px;
+    }
+
     .btn {
       background: #ff9800;
       color: #fff;
-      padding: 12px 25px;
+      padding: 14px 30px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
       font-weight: bold;
+      display: inline-block;
     }
+
     section {
-      padding: 60px 40px;
+      background: #fff;
+      padding: 70px 20px;
+      margin-bottom: 20px;
     }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 35px;
+      color: #0a4cff;
+    }
+
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      justify-content: center;
     }
+
     .card {
-      border: 1px solid #ddd;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      text-align: center;
     }
+
+    #about p {
+      font-size: 17px;
+      max-width: 900px;
+      margin: 0 auto 20px;
+      text-align: justify;
+    }
+
+    .company-info {
+      background: #f1f3f6;
+      padding: 30px;
+      border-radius: 10px;
+      margin: 0 auto;
+      max-width: 900px;
+    }
+
+    .company-info p {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    #contact form {
+      max-width: 600px;
+      margin: auto;
+      background: #f9fafc;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      width: 100%;
+      background: #0a4cff;
+      color: #fff;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #map iframe {
+      width: 100%;
+      height: 400px;
+      border-radius: 10px;
+      border: 0;
+    }
+
     footer {
       background: #222;
       color: #fff;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
+      font-size: 14px;
     }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
+
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 999;
     }
-    form button {
+
+    .floating-buttons a {
       background: #0a4cff;
       color: #fff;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+      padding: 14px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+    }
+
+    .floating-buttons .zalo {
+      background: #0068ff;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>Dịch Vụ Vận Tải THANH THANH TIỀN</h1>
+
+<header>
+  <div class="container">
+    <h1>CÔNG TY TNHH VẬN TẢI THANH THANH TIỀN</h1>
     <nav>
       <a href="#home">Trang chủ</a>
       <a href="#services">Dịch vụ</a>
       <a href="#about">Giới thiệu</a>
       <a href="#contact">Liên hệ</a>
     </nav>
-  </header>
-
-  <div class="hero" id="home">
-    <h2>Giải pháp vận tải nhanh chóng & an toàn</h2>
-    <p>Chuyên vận chuyển hàng hóa với chi phí tối ưu</p>
-    <a href="#contact" class="btn">Yêu cầu báo giá</a>
   </div>
+</header>
 
-  <section id="services">
+<div class="hero" id="home">
+  <h2>Giải pháp vận tải uy tín – an toàn – đúng tiến độ</h2>
+  <p>Đối tác vận chuyển tin cậy của doanh nghiệp và cá nhân</p>
+  <a href="#contact" class="btn">Yêu cầu báo giá</a>
+</div>
+
+<section id="services">
+  <div class="container">
     <h2>Dịch vụ của chúng tôi</h2>
     <div class="services">
       <div class="card">
-        <h3>Vận tải đường bộ</h3>
-        <p>Vận chuyển hàng hóa bằng xe tải, với đa dạng các loại xe, các mức trọng tải khác nhau</p>
+        <h3>🚚 Vận tải đường bộ</h3>
+        <p>
+          Chúng tôi mang đến giải pháp vận chuyển hàng hóa toàn diện với đội xe tải đa dạng trọng tải,
+          sẵn sàng đáp ứng linh hoạt mọi nhu cầu giao nhận trên toàn quốc. Bằng kinh nghiệm thực tiễn
+          trong lĩnh vực vận tải cùng quy trình làm việc chuyên nghiệp, chúng tôi cam kết đảm bảo an
+          toàn hàng hóa, đúng tiến độ và tối ưu chi phí.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="about">
-    <h2>Về chúng tôi</h2>
-    <p>Dịch Vụ Vận Tải THANH THANH TIỀN có hơn 5 năm kinh nghiệm trong lĩnh vực vận chuyển hàng hóa. Chúng tôi cam kết mang đến dịch vụ an toàn, đúng tiến độ và chi phí cạnh tranh.</p>
-  </section>
+<section id="about">
+  <div class="container">
+    <h2>Giới thiệu công ty</h2>
 
-  <section id="contact">
-    <h2>Liên hệ</h2>
-    <form>
-      <input type="text" placeholder="Họ và tên" required />
-      <input type="email" placeholder="Email" required />
-      <input type="tel" placeholder="Số điện thoại" />
-      <textarea rows="4" placeholder="Nội dung yêu cầu"></textarea>
+    <p>
+      Công ty TNHH Vận Tải Thanh Thanh Tiền được thành lập với mục tiêu cung cấp các giải pháp
+      vận chuyển hàng hóa an toàn, hiệu quả và tối ưu chi phí cho khách hàng trên toàn quốc.
+    </p>
+
+    <p>
+      Với nhiều năm kinh nghiệm trong lĩnh vực vận tải đường bộ, chúng tôi hiểu rõ từng đặc thù
+      của mỗi loại hàng hóa, từ đó xây dựng phương án vận chuyển phù hợp, đảm bảo hàng hóa
+      luôn được giao đúng hẹn và an toàn tuyệt đối.
+    </p>
+
+    <p>
+      Phương châm hoạt động của chúng tôi là <strong>“Uy tín – Trách nhiệm – Đồng hành lâu dài”</strong>.
+      Thanh Thanh Tiền không ngừng đầu tư phương tiện, nâng cao chất lượng dịch vụ và xây dựng
+      đội ngũ tài xế chuyên nghiệp nhằm mang lại sự an tâm cao nhất cho khách hàng.
+    </p>
+  </div>
+</section>
+
+<!-- FORM -->
+<section id="contact">
+  <div class="container">
+    <h2>Liên hệ & Báo giá</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+      <input type="text" name="name" placeholder="Họ và tên *" required>
+      <input type="email" name="email" placeholder="Email *" required>
+      <input type="tel" name="phone" placeholder="Số điện thoại">
+      <textarea name="message" rows="5" placeholder="Nội dung yêu cầu"></textarea>
       <button type="submit">Gửi yêu cầu</button>
     </form>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 Dịch Vụ Vận Tải Thanh Thanh Tiền. All rights reserved.</p>
-  </footer>
+<!-- THÔNG TIN CÔNG TY -->
+<section>
+  <div class="container">
+    <h2>Thông tin công ty</h2>
+    <div class="company-info">
+      <p>🏢 Tên công ty: CÔNG TY TNHH VẬN TẢI THANH THANH TIỀN</p>
+      <p>📍 Địa chỉ: Số 6 Âu Cơ, Thôn Tân Lạc 2, Xã Bảo Lâm 2, Tỉnh Lâm Đồng</p>
+      <p>🧾 Mã số thuế: 5801559430</p>
+      <p>📞 Hotline: 0914358344</p>
+      <p>📞 Email: vantaithanhthanhtien@gmail.com</p>
+    </div>
+  </div>
+</section>
+
+<!-- MAP CUỐI TRANG -->
+<section id="map">
+  <div class="container">
+    <h2>Bản đồ công ty</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301.6375467273431!2d107.87387013844419!3d11.491931416116929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317407004a95b047%3A0x6256f977ec4c3d10!2zVUJORCBYw6MgVMOibiBM4bqhYw!5e1!3m2!1svi!2s!4v1768576727057!5m2!1svi!2s"
+      loading="lazy"></iframe>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Công Ty TNHH Vận Tải Thanh Thanh Tiền. All rights reserved.</p>
+</footer>
+
+<div class="floating-buttons">
+  <a href="tel:0914358344">📞 Gọi ngay</a>
+  <a href="https://zalo.me/0914358344" class="zalo">💬 Zalo</a>
+</div>
+
 </body>
 </html>
